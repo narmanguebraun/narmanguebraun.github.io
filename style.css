@@ -1,0 +1,111 @@
+/* RESET - http://meyerweb.com/eric/tools/css/reset/ - v2.0 | 20110126 - License: none (public domain) */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* FONTS */
+@font-face {
+  font-family: 'Inter var';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+  src: url(public/fonts/Inter-roman.latin.var.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Inter var';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: block;
+  src: url(public/fonts/Inter-italic.latin.var.woff2) format('woff2');
+  font-named-instance: 'Italic';
+}
+/* GLOBAL */
+* {box-sizing: border-box;}
+html {font-size: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;-webkit-font-smoothing: antialiased;}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  vertical-align:baseline;
+}
+html,
+body {
+  font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-feature-settings: 'case' 1, 'cpsp' 1, 'dlig' 1, 'cv01' 1, 'cv02',
+  'cv03' 1, 'cv04' 1;
+  font-variation-settings: 'wght' 300;
+  font-variant: common-ligatures contextual;
+  letter-spacing: 0.0375em;
+  font-size: 13px;
+  line-height: 2rem;
+  background-color:#161318;
+/*  background: linear-gradient(to top, rgb(119, 121, 120), rgb(163, 163, 163));*/
+  color:#efefef;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 13px;
+  line-height: 2rem;
+}
+h1, h2, h3 {
+  margin:0 0 2rem;
+}
+
+p {
+  line-height: 2rem;
+}
+li {
+  line-height: 2rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color:#efefef;
+  text-decoration: none;
+  border-bottom:solid 1px #efefef;
+}
+a:hover {
+  font-style:italic;
+}
+
+::-moz-selection {background: rgba(255, 255, 255, 1.0); color: #fff; text-shadow: none;}
+::selection {background: rgba(255, 255, 255, 1.0);color: #fff;text-shadow: none;}
+
+.work {padding:20px;}
+.work img {width:100%;height:auto;}
+.summary {padding:20px;}
+.summary p {padding-bottom: 20px;}
+.links {padding:20px;}
+.links h3 {padding:40px 0 0;}
+.links li:hover .tags {display: none;}
+.tags {padding-left: 10px;display: none;color: #464152;border-bottom: 1px solid #161318;}
+.connect {text-align:left;padding:60px 20px 120px;}
+.connect li {display: inline-block;margin:0 20px 0 0;font-size:18px;}
+.connect li a {border-bottom:none;}
+.connect li a:hover {color:#c91248;}
+
+@media (min-width: 768px) {
+body {background: #161318;color: #efefef;height:100vh;}
+  .work {display:block;max-width: 420px;position: absolute;top: 0;right: 0;}
+  .summary {display:block;max-width: 380px;padding:40px;margin:0;}
+  .links {display:block;position: absolute;left: 0;bottom: 0;padding:40px;}
+  .connect {display:block;position: absolute;right: 0;bottom: 0;z-index: 2;width: 420px;text-align:right;padding:40px;}
+  .connect li {display: inline-block;margin:0 0 0 20px;}
+  .links li:hover .tags {display: inline;}
+}
+
+@media (min-width: 860px) {
+body {background: #161318;color: #efefef;height:100vh;}
+  .summary {display:block;max-width: 500px;padding:40px;margin:0;}
+}
+@media (min-width: 1024px) {
+  .work {max-width: 600px;}
+}
+@media (min-width: 1280px) {
+  .summary {max-width: 500px;}
+}
